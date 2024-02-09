@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <script src="shop.js"></script>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <h1>GROCERY SHOP <i class="fa fa-shopping-cart" style="color: #74C0FC; font-size: 48px;"></i></h1>
+    <div class="cart">
+        <div  class="vegetables">
+            <H3>  VEGETABLES </H3>
+            <BR>
+           <ol>
+            <li>CARROT <input type="button" name ="CARROT" onclick="Add(this,60)" value="ADD"></li><BR><BR>
+            <li>TOMATO <input type="button" name ="TOMATO" onclick="Add(this,20)" value="ADD"></li><BR><BR>
+            <li>BEETROOT <input type="button" name ="BEETROOT" onclick="Add(this,30)" value="ADD"></li><BR><BR>
+            <li>POTATO <input type="button" name ="POTATO" onclick="Add(this,5)" value="ADD"></li><BR><BR>
+            <li>CAULIFLOWER <input type="button" name ="CAULIFLOWER" onclick="Add(this,100)" value="ADD"></li><BR><BR>
+            <li>CABBAGE <input type="button" name ="CABBAGE" onclick="Add(this,35)" value="ADD"></li>
+           </ol>
+         </div>
+         
+         
+         <div  class="fruits">
+           <H3>FRUITS</H3>
+           <BR>
+           <ol>
+            <li>MANGO <input type="button" name ="MANGO" onclick="Add(this,105)" value="ADD"></li><BR><BR>
+            <li>APPLE <input type="button" name ="APPLE"onclick="Add(this,250)" value="ADD"></li><BR><BR>
+            <li>WATER MELON <input type="button" name ="WATERMELON" onclick="Add(this,50)" value="ADD"></li><BR><BR>
+            <li>STRAWBERRY <input type="button" name ="STRAWBERRY" onclick="Add(this,1000)" value="ADD"></li><BR><BR>
+            <li>BLUEBERRY <input type="button" name ="BLUEBERRY" onclick="Add(this,500)" value="ADD"></li><BR><BR>
+            <li>GRAPES <input type="button" name ="GRAPES" onclick="Add(this,300)" value="ADD"></li>
+           </ol>
+         </div>
+         
+         <div  class="snacks">
+            <H3>  SNACKS </H3>
+            <BR>
+           <ol>
+            <li>BISCUITS <input type="button" name ="BISCUITS" onclick="Add(this,35)" value="ADD"></li><BR><BR>
+            <li>NUTS <input type="button" name ="NUTS" onclick="Add(this,1200)" value="ADD"></li><BR><BR>
+            <li>SWEETS <input type="button" name ="SWEETS" onclick="Add(this,48)" value="ADD"></li><BR><BR>
+            <li>CHOCOLATES <input type="button" name ="CHOCOLATES" onclick="Add(this,20)" onclick="Add(100)" value="ADD"></li><BR><BR>
+            <li>RICE CRACKERS <input type="button" name ="RICE CRACKERS" onclick="Add(this,55)" value="ADD"></li><BR><BR>
+            <li>CHOCO CHIPS <input type="button" name ="CHOCO CHIPS" onclick="Add(this,15)" value="ADD"></li>
+           </ol>
+         </div>
+         
+         <div  class="essentials">
+           <H3>ESSENTIALS </H3>
+           <BR>
+           <ol>
+            <li>SHAMPOO <input type="button" name ="SHAMPOO" onclick="Add(this,120)" value="ADD"></li><BR><BR>
+            <li>TOOTH PASTE <input type="button" name ="TOOTH PASTE" onclick="Add(this,100)" value="ADD"></li><BR><BR>
+            <li>BATHING SOAP <input type="button" name ="BATHING SOAP" onclick="Add(this,137)" value="ADD"></li><BR><BR>
+            <li>COMB <input type="button" name ="COMB" onclick="Add(this,20)" value="ADD"></li><BR><BR>
+            <li>CLUTHCHES  <input type="button" name ="CLUTHCHES" onclick="Add(this,20)" value="ADD"></li><BR><BR>
+            <li>CRUNCHIES <input type="button" name ="CRUNCHIES" onclick="Add(this,40)" value="ADD"></li>
+           </ol>
+         </div>
+   
+
+    <div class="Bill">
+        <label for="Name">Name</label>
+        <input type="text"  class="customer_name"><br><br>
+        <label for="phone number" >Phone No</label>
+        <input type="text" class="customer_phone_no"><br><br>
+        <!-- <span id="displayValue"></span><br><br> -->
+        <input type="button" onclick="Bill_Generate()"value="Generate Bill">
+    </div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- <p id="displayValue"></p> -->
+    </div>
+</div>
+
+
+    </div>
+
+</body>
+</html>
